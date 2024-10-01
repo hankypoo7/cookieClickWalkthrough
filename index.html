@@ -1,18 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  <center>
-    
-    <script src="script.js"></script>
+    <center>
+        <h1>Cookie Clicker</h1>
 
-    <h1>Cookie Clicker</h1>
-    
-    <p>Cookies: </p><p id="cookiesText"></p>
-    
-    <button onclick="clicked()">
-      <img src="cookie.png" alt="cookiepng"/>
-    </button>
-  
-  </center>
+        <p>Cookies: <span id="cookiesText">0</span></p>
+        <p>Power: <span id="powerText">0</span></p>
+        <p>Power Upgrade Cost: <span id="costText">10</span></p>
+
+        <!-- Button to click and gain cookies -->
+        <button onclick="clicked()">
+            <img src="cookie.png" alt="cookiepng" width="100" height="100"/>
+        </button>
+
+        <!-- Button to buy power using cookies -->
+        <button onclick="powerBuy()">Buy Power</button>
+
+        <script src="script.js"></script>
+    </center>
 </body>
 </html>
