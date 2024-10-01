@@ -1,8 +1,17 @@
+/* Basic body styling */
 body {
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
 }
 
+/* Main container styling */
+.main {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+/* Centered section with cookie and power information */
 h1 {
     color: #444;
     margin-bottom: 20px;
@@ -13,27 +22,73 @@ p {
     color: #333;
 }
 
-button {
+.click-button {
     background-color: #e67e22;
     color: white;
     font-size: 18px;
-    padding: 10px 20px;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
 }
 
-button img {
+.click-button img {
     vertical-align: middle;
 }
 
-button:hover {
+.click-button:hover {
     background-color: #d35400;
 }
 
-button:active {
+.click-button:active {
     background-color: #c0392b;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    background-color: #ddd;
+    padding: 20px;
+    box-shadow: -2px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Upgrade button styling in the sidebar */
+.upgrade-button {
+    display: flex;
+    align-items: center;
+    background-color: #666;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.upgrade-button:hover {
+    background-color: #555;
+}
+
+.upgrade-button img.icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 22px;
+}
+
+.cost, .owned {
+    font-size: 18px;
+    color: #00FF00;
 }
 
 #cookiesText, #powerText, #costText {
