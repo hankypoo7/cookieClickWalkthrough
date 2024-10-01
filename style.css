@@ -44,15 +44,16 @@ p {
     background-color: #c0392b;
 }
 
-/* Sidebar styling */
+/* Sidebar styling with black border */
 .sidebar {
     width: 250px;
     background-color: #ddd;
     padding: 20px;
     box-shadow: -2px 0px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid black;  /* Small black border */
 }
 
-/* Upgrade button styling in the sidebar */
+/* Upgrade button styling with black border in the sidebar */
 .upgrade-button {
     display: flex;
     align-items: center;
@@ -65,6 +66,7 @@ p {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
+    border: 1px solid black;  /* Small black border */
 }
 
 .upgrade-button:hover {
@@ -72,8 +74,8 @@ p {
 }
 
 .upgrade-button img.icon {
-    width: 50px;
-    height: 50px;
+    width: 50px; /* Set the size of cursor.png */
+    height: 50px; /* Set the size of cursor.png */
     margin-right: 20px;
 }
 
