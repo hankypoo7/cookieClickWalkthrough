@@ -1,0 +1,42 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+    color: #333;
+}
+
+button {
+    background-color: #e67e22;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button img {
+    vertical-align: middle;
+}
+
+button:hover {
+    background-color: #d35400;
+}
+
+button:active {
+    background-color: #c0392b;
+}
+
+#cookiesText, #powerText, #costText {
+    font-weight: bold;
+    color: #27ae60;
+}
