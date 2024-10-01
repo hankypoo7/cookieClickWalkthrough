@@ -4,25 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cookie Clicker</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
 </head>
 <body>
-    <center>
-        <h1>Cookie Clicker</h1>
+    <div class="main">
+        <center>
+            <h1>Cookie Clicker</h1>
 
-        <p>Cookies: <span id="cookiesText">0</span></p>
-        <p>Power/Cookies per click:<span id="powerText">0</span></p>
-        <p>Power Upgrade Cost: <span id="costText">10</span></p>
+            <!-- Displaying the number of cookies and power -->
+            <p>Cookies: <span id="cookiesText">0</span></p>
+            <p>Power/Cookies per click: <span id="powerText">0</span></p>
 
-        <!-- Button to click and gain cookies -->
-        <button onclick="clicked()">
-            <img src="cookie.png" alt="cookiepng" width="100" height="100"/>
-        </button>
+            <!-- Button to click and gain cookies -->
+            <button class="click-button" onclick="clicked()">
+                <img src="cookie.png" alt="cookiepng" width="100" height="100"/>
+            </button>
+        </center>
 
-        <!-- Button to buy power using cookies -->
-        <button onclick="powerBuy()">Buy Power</button>
+        <!-- Sidebar with power upgrades on the right -->
+        <div class="sidebar">
+            <h2>Upgrades</h2>
 
-        <script src="script.js"></script>
-    </center>
+            <!-- Power Upgrade Button (sidebar button) -->
+            <div class="upgrade-button" onclick="powerBuy()">
+                <img src="cursor.png" alt="Power Icon" class="icon" />
+                <div class="info">
+                    <span class="title">Power</span>
+                    <span class="cost">Cost: <span id="costText">10</span></span>
+                    <span class="owned">Owned: <span id="powerText">0</span></span>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>  <!-- Link to your JavaScript file -->
+    </div>
 </body>
 </html>
