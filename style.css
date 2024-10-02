@@ -2,16 +2,32 @@
 body {
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Main container styling */
 .main {
     display: flex;
     justify-content: space-between;
+    width: 80vw;
     height: 100vh;
 }
 
-/* Centered section with cookie and power information */
+/* Center the section with cookie and power information */
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* Header and paragraph styling */
 h1 {
     color: #444;
     margin-bottom: 20px;
@@ -22,6 +38,7 @@ p {
     color: #333;
 }
 
+/* Cookie click button styling */
 .click-button {
     background-color: #e67e22;
     color: white;
@@ -30,6 +47,7 @@ p {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .click-button img {
@@ -50,10 +68,10 @@ p {
     background-color: #ddd;
     padding: 20px;
     box-shadow: -2px 0px 8px rgba(0, 0, 0, 0.2);
-    border: 2px solid black;  /* Increased black border thickness */
+    border: 2px solid black;
 }
 
-/* Upgrade button styling with black border in the sidebar */
+/* Upgrade button styling in the sidebar */
 .upgrade-button {
     display: flex;
     align-items: center;
@@ -66,7 +84,7 @@ p {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
-    border: 2px solid black;  /* Increased black border thickness */
+    border: 2px solid black;
 }
 
 .upgrade-button:hover {
@@ -74,8 +92,8 @@ p {
 }
 
 .upgrade-button img.icon {
-    width: 50px; /* Set the size of cursor.png */
-    height: 50px; /* Set the size of cursor.png */
+    width: 50px;
+    height: 50px;
     margin-right: 20px;
 }
 
