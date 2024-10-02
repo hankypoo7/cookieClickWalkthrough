@@ -19,7 +19,7 @@ function powerBuy() {
         document.getElementById("cookiesText").innerHTML = cookies;
         document.getElementById("powerText").innerHTML = power;
         document.getElementById("costText").innerHTML = Math.floor(cost);
-        document.getElementById("powerText").innerHTML = power;
+        document.getElementById("powerNumButton").innerHTML = power;
     } else {
         console.log('Not enough cookies!');
     }
