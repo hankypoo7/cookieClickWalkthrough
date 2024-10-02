@@ -17,9 +17,8 @@ function powerBuy() {
         cookies -= cost;
         cost = 10 * (1 + (power * 0.1));
         document.getElementById("cookiesText").innerHTML = cookies;
-        document.getElementById("powerText").innerHTML = power;
-        document.getElementById("costText").innerHTML = Math.floor(cost);
-        document.getElementById("powerNumButton").innerHTML = power;
+        document.getElementById("powerText").innerHTML = power; // This will update the owned power count
+        document.getElementById("costText").innerHTML = Math.floor(cost); // Update the cost text
     } else {
         console.log('Not enough cookies!');
     }
