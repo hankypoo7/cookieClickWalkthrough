@@ -1,27 +1,26 @@
-//declare variables
 let cookies = 0;
 let power = 0;
 let cost = 10;
 
-//create functions
 function clicked() {
-    if (power === 0) { 
+    if (power === 0) {
         cookies += 1;
     } else {
-        cookies += power;  // Increase cookies based on current power
+        cookies += power;
     }
-    document.getElementById("cookiesText").innerHTML = cookies; // Update text showing # of cookies
+    document.getElementById("cookiesText").innerHTML = cookies;
 }
 
 function powerBuy() {
-    if (cookies >= cost) {  // Check if cookies are enough for the cost
-        power += 1; // Add 1 to power
-        cookies -= cost;  // Subtract cost from cookies
-        cost = Math.ceil(10 * Math.pow(1.1, power));  // Increase cost by 1.1 for every power upgrade
-        document.getElementById("cookiesText").innerHTML = cookies; // Update text showing # of cookies
-        document.getElementById("powerText").innerHTML = power; // Show amount of power
-        document.getElementById("costText").innerHTML = cost;  // Display new cost
+    if (cookies >= cost) {
+        power += 1;
+        cookies -= cost;
+        cost = 10 * (1 + (power * 0.1));
+        document.getElementById("cookiesText").innerHTML = cookies;
+        document.getElementById("powerText").innerHTML = power;
+        document.getElementById("costText").innerHTML = Math.floor(cost);
+        document.getElementById("powerText").innerHTML = power;
     } else {
-        console.log('Not enough cookies!'); // If cookies <= cost, log error message
+        console.log('Not enough cookies!');
     }
 }
