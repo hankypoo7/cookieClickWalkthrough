@@ -16,9 +16,14 @@ function powerBuy() {
         power += 1;
         cookies -= cost;
         cost = 10 * (1 + (power * 0.1));
+
+        // Update the number of cookies, power per click, and cost in the display
         document.getElementById("cookiesText").innerHTML = cookies;
-        document.getElementById("powerText").innerHTML = power; // This will update the owned power count
-        document.getElementById("costText").innerHTML = Math.floor(cost); // Update the cost text
+        document.getElementById("powerPerClickText").innerHTML = power;  // Power per click on the left
+        document.getElementById("costText").innerHTML = Math.floor(cost);  // Update cost text
+
+        // Update the owned power count in the sidebar
+        document.getElementById("powerOwnedText").innerHTML = power;  // Owned power in the sidebar
     } else {
         console.log('Not enough cookies!');
     }
